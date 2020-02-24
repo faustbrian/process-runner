@@ -17,10 +17,17 @@ composer require kodekeep/process-runner
 
 ## Usage
 
-``` php
-$skeleton = new KodeKeep\Skeleton();
-echo $skeleton->echoPhrase('Hello, KodeKeep!');
+See our [tests](https://github.com/kodekeep/process-runner/tree/master/tests) for usage examples.
+
+### Laravel
+
+When you are using this package within Laravel you can use [Real-Time Facades](https://laravel.com/docs/6.x/facades#real-time-facades) to get the benefits of the mocking utilities that are available to facades.
+
+```php
+use \Facades\KodeKeep\ProcessRunner\ProcessRunners\ProcessRunner;
 ```
+
+This means that you can simply use the the underlying methods exposed through a facade to mock your results instead of having to use the `MockProcessRunner`.
 
 ## Testing
 
