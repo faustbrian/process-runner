@@ -13,22 +13,22 @@ declare(strict_types=1);
 
 namespace KodeKeep\ProcessRunner\Tests\Unit\ProcessRunners;
 
-use KodeKeep\ProcessRunner\ProcessRunners\SymfonyProcessRunner;
+use KodeKeep\ProcessRunner\ProcessRunners\ProcessRunner;
 use KodeKeep\ProcessRunner\Tests\TestCase;
 use Symfony\Component\Process\Process;
 
 /**
- * @covers \KodeKeep\ProcessRunner\ProcessRunners\SymfonyProcessRunner
+ * @covers \KodeKeep\ProcessRunner\ProcessRunners\ProcessRunner
  */
 class SymfonyProcessRunnerTest extends TestCase
 {
-    private SymfonyProcessRunner $subject;
+    private ProcessRunner $subject;
 
     public function setUp(): void
     {
         parent::setUp();
 
-        $this->subject = new SymfonyProcessRunner();
+        $this->subject = new ProcessRunner();
     }
 
     /** @test */

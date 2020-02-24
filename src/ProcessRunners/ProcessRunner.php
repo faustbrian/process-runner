@@ -13,12 +13,12 @@ declare(strict_types=1);
 
 namespace KodeKeep\ProcessRunner\ProcessRunners;
 
-use KodeKeep\ProcessRunner\Contracts\ProcessRunner;
+use KodeKeep\ProcessRunner\Contracts\ProcessRunner as Contract;
 use KodeKeep\ProcessRunner\ShellResponse;
 use Symfony\Component\Process\Exception\ProcessTimedOutException;
 use Symfony\Component\Process\Process;
 
-class SymfonyProcessRunner implements ProcessRunner
+class ProcessRunner implements Contract
 {
     public function run(Process $process): ShellResponse
     {
