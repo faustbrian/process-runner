@@ -13,8 +13,6 @@ declare(strict_types=1);
 
 namespace KodeKeep\ProcessRunner\Tests;
 
-use KodeKeep\ProcessRunner\Facades\ProcessRunner;
-use KodeKeep\ProcessRunner\Providers\ProcessRunnerServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra

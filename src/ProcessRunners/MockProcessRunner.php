@@ -14,9 +14,9 @@ declare(strict_types=1);
 namespace KodeKeep\ProcessRunner\ProcessRunners;
 
 use Exception;
-use Symfony\Component\Process\Process;
-use KodeKeep\ProcessRunner\ShellResponse;
 use KodeKeep\ProcessRunner\Contracts\ProcessRunner;
+use KodeKeep\ProcessRunner\ShellResponse;
+use Symfony\Component\Process\Process;
 
 class MockProcessRunner implements ProcessRunner
 {
